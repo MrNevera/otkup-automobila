@@ -1,0 +1,35 @@
+# Upute održavanje
+
+Ova uputica služi kao vodica za održavanje vozila koja su u otkupu ili prodaju.
+
+## Kako koristiti ovu uputicu
+
+1. **Prije prodaje**
+   - Pроверite sve tekuće i pneumatike
+   - Zabilježite sve radove koji su uradjeni
+   - Pроверite da li je vozilo u ispravnom stanju
+
+2. **Posle prodaje**
+   - Pроверite da li je vozilo isporučeno i da li je klijentovni podatak ispravan
+   - Pроверite da li je vozilo isporučeno prema dogovoru
+   - Pроверite da li je klijentovni kontakt ispravan
+
+3. **Uputstvo za kupca**
+   - Pроверite vozilo prije kupovine
+   - Pроверite da li je vozilo u ispravnom stanju
+   - Pроверite da li je vozilo isporučeno prema dogovoru
+
+4. **Dodatne informacije**
+   - Ovo je uputica za servisne radove
+   - Primijenjiv je za vozila koja su u otkupu ili prodaju
+   - Primjena se može izvršiti tijekom prodaje ili nakon prodaje
+
+## Kako koristiti
+
+1. Otvorite ovu uputicu
+2. Pроверite vozilo prema odeljku "Kako koristiti ovu uputicu"
+3. Izvršite potrebne radove
+5. Zabilježite sve informacije u uputici
+
+## Napomena
+Ova uputica je informativna i ne predstavlja pravno obvezno dokument. Za detalje tražite u odrednoj firmi ili servisnoj službi.
