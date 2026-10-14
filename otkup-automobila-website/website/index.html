@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>otkup__automobila_ — Otop Automobil - Kupujemo, Prodajemo</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --primary: #2563eb; --primary-d: #1e40af;
+      --accent: #10b981; --accent-l: #d1fae5;
+      --bg: #ffffff; --surface: #f9fafb;
+      --text: #111827; --text-soft: #6b7280;
+      --line: rgba(0,0,0,0.1); --white: #FFFFFF;
+    }
+    body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+    .site-nav { background: var(--white); border-bottom: 1px solid var(--line); padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; }
+    .site-nav .logo { font-weight: 900; font-size: 1.5rem; color: var(--primary); }
+    .site-nav .nav-links { display: flex; gap: 1.5rem; }
+    .site-nav .nav-links a { text-decoration: none; color: var(--text); font-weight: 500; }
+    .site-nav .nav-links a:hover { color: var(--primary); }
+    .hero { background: linear-gradient(135deg, var(--primary), var(--accent)); color: var(--white); padding: 5rem 2rem; text-align: center; }
+    .hero h1 { font-size: 3rem; margin-bottom: 1rem; }
+    .hero p { font-size: 1.25rem; max-width: 800px; margin: 0 auto; }
+    .page-header { background: var(--surface); padding: 3rem 2rem; text-align: center; }
+    .page-header h1 { font-size: 2.5rem; color: var(--primary); margin-bottom: 0.5rem; }
+    .page-header p { color: var(--text-soft); font-size: 1.1rem; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+    .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-top: 2rem; }
+    .service-card { background: var(--white); border-radius: 8px; padding: 2rem; box-shadow: 0 2px 6px rgba(0,0,0,0.05); }
+    .service-card h3 { color: var(--primary-d); margin-bottom: 1rem; }
+    .service-card p { color: var(--text-soft); }
+    .cta { background: var(--primary); color: var(--white); padding: 3rem 2rem; text-align: center; margin-top: 3rem; }
+    .cta h2 { font-size: 2rem; margin-bottom: 1rem; }
+    .cta p { font-size: 1.1rem; margin-bottom: 1.5rem; }
+    .cta-btn { background: var(--white); color: var(--primary); border: none; padding: 0.75rem 2rem; font-size: 1rem; font-weight: 600; border-radius: 6px; cursor: pointer; }
+    .cta-btn:hover { background: var(--accent-l); }
+    .contact-form { max-width: 600px; margin: 2rem auto; }
+    .form-row { display: flex; gap: 1rem; margin-bottom: 1rem; }
+    .form-group { flex: 1; }
+    .form-group label { display: block; margin-bottom: 0.5rem; font-weight: 500; }
+    .form-group input, .form-group select, .form-group textarea { width: 100%; padding: 0.75rem; border: 1px solid var(--line); border-radius: 4px; }
+    .form-group textarea { min-height: 120px; resize: vertical; }
+    .form-submit { background: var(--primary); color: var(--white); border: none; padding: 1rem 2rem; border-radius: 6px; font-size: 1rem; cursor: pointer; width: 100%; }
+    .form-submit:hover { background: var(--primary-d); }
+    footer { background: var(--text); color: var(--white); padding: 2rem; text-align: center; margin-top: 3rem; }
+    .reveal { opacity: 0; transform: translateY(20px); transition: all 0.6s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    @media (max-width: 900px) {
+      .site-nav { flex-direction: column; gap: 1rem; }
+      .hero h1 { font-size: 2.5rem; }
+      .form-row { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="site-nav">
+    <div class="logo">otkup__automobila</div>
+    <div class="nav-links">
+      <a href="index.html">Početna</a>
+      <a href="o-nama.html">O nama</a>
+      <a href="usluge.html">Usluge</a>
+      <a href="kontakt.html">Kontakt</a>
+    </div>
+  </nav>
+
+  <header class="hero reveal">
+    <h1>Otop Automobil — Brz i Siguran Kup</h1>
+    <p>Kupujemo i prodajemo automobile odmah. Ocijenite online za besplatnu procjenu, pljatu isti dan.</p>
+  </header>
+
+  <main class="container">
+    <section class="services reveal">
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <h3>✅ Brzi Otop Automobila</h3>
+          <p>Otpremamo vozila odmah. Pošaljite fotografiju i dobijte ponudu u roku od 24 sati.</p>
+        </div>
+        <div class="service-card reveal">
+          <h3>✅ Izborna Ponuda</h3>
+          <p>Uvažavamo sve marke i modele. Proveravamo sva stanja, godine i istoriju održavanja.</p>
+        </div>
+        <div class="service-card reveal">
+          <h3>✅ Gotovina odmah</h3>
+          <p>Ispunimo se gotovinom iste dan. Nema kreditne provjere, nema skrivenih troškova.</p>
+        </div>
+        <div class="service-card reveal">
+          <h3>✅ Besplatna Procjena</h3>
+          <p>Pošaljite sliku s Instagrama ili telefona i dobijte procjenu u roku od 2 sata.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta reveal">
+      <h2>Htjeli ste Brzu Ponudu?</h2>
+      <p>Pošaljite nam sliku automobila i telefon za trenutnu procjenu.</p>
+      <button class="cta-btn" onclick="document.querySelector('#kontakt').scrollIntoView({behavior:'smooth'});">Pošaljite Upit</button>
+    </section>
+  </main>
+
+  <footer id="kontakt">
+    <p>otkup__automobila_ &copy; 2026 · Otop Automobil</p>
+    <p>Instagram: @otkup__automobila_ · Telefon: +385 XXX XXX XXX</p>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>

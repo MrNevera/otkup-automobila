@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakt - otkup__automobila_</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --primary: #2563eb; --primary-d: #1e40af;
+      --accent: #10b981; --accent-l: #d1fae5;
+      --bg: #ffffff; --surface: #f9fafb;
+      --text: #111827; --text-soft: #6b7280;
+      --line: rgba(0,0,0,0.1); --white: #FFFFFF;
+    }
+    body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+    .site-nav { background: var(--white); border-bottom: 1px solid var(--line); padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; }
+    .site-nav .logo { font-weight: 900; font-size: 1.5rem; color: var(--primary); }
+    .site-nav .nav-links { display: flex; gap: 1.5rem; }
+    .site-nav .nav-links a { text-decoration: none; color: var(--text); font-weight: 500; }
+    .site-nav .nav-links a:hover { color: var(--primary); }
+    .page-header { background: var(--surface); padding: 3rem 2rem; text-align: center; }
+    .page-header h1 { font-size: 2.5rem; color: var(--primary); margin-bottom: 0.5rem; }
+    .page-header p { color: var(--text-soft); font-size: 1.1rem; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+    .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem; margin-top: 3rem; }
+    .contact-info { background: var(--white); padding: 2rem; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.05); }
+    .contact-info h3 { color: var(--primary-d); margin-bottom: 1.5rem; }
+    .info-item { display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1.5rem; }
+    .info-item .icon { font-size: 1.5rem; }
+    .info-item .text strong { display: block; margin-bottom: 0.25rem; }
+    .info-item .text p { color: var(--text-soft); }
+    .map { height: 300px; background: var(--surface); border-radius: 8px; }
+    footer { background: var(--text); color: var(--white); padding: 2rem; text-align: center; margin-top: 3rem; }
+    .reveal { opacity: 0; transform: translateY(20px); transition: all 0.6s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    @media (max-width: 900px) {
+      .site-nav { flex-direction: column; gap: 1rem; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="site-nav">
+    <div class="logo">otkup__automobila</div>
+    <div class="nav-links">
+      <a href="index.html">Početna</a>
+      <a href="o-nama.html">O nama</a>
+      <a href="usluge.html">Usluge</a>
+      <a href="kontakt.html">Kontakt</a>
+    </div>
+  </nav>
+
+  <header class="page-header reveal">
+    <h1>Kontaktirajte nas</h1>
+    <p>Slobodno nas pozovite ili pošaljite poruku - odgovorićemo iste minute</p>
+  </header>
+
+  <main class="container">
+    <section class="contact-grid reveal">
+      <div class="contact-info reveal">
+        <h3>📍 Informacije</h3>
+        <div class="info-item">
+          <div class="icon">📱</div>
+          <div class="text">
+            <strong>Telefon</strong>
+            <p>+385 XXX XXX XXX</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="icon">✉️</div>
+          <div class="text">
+            <strong>E-mail</strong>
+            <p>info@otkupautomobila.hr</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="icon">📍</div>
+          <div class="text">
+            <strong>Adresa</strong>
+            <p>Ulica Svetog Jeronima 37<br>Vukovar, Hrvatska</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-info reveal">
+        <h3>💬 Pošaljite Nam Poruku</h3>
+        <form class="contact-form" action="https://formspree.io/f/xldjylpy" method="POST">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Ime i Prezime</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Adresa</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="phone">Broj Telefona</label>
+            <input type="tel" id="phone" name="phone">
+          </div>
+          <div class="form-group">
+            <label for="type">Tip Upita</label>
+            <select id="type" name="type">
+              <option value="Otop Automobil">Otop Automobila</option>
+              <option value="Prodaja">Prodaja</option>
+              <option value="Financiranje">Financiranje</option>
+              <option value="Drugo">Drugo</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Poruka</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+          <button type="submit" class="form-submit">Pošaljite Upit →</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="reveal">
+      <div class="map reveal"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>otkup__automobila_ &copy; 2026 · Otop Automobil</p>
+    <p>Instagram: @otkup__automobila_ · Telefon: +385 XXX XXX XXX</p>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>

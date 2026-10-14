@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>O nama - otkup__automobila_</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --primary: #2563eb; --primary-d: #1e40af;
+      --accent: #10b981; --accent-l: #d1fae5;
+      --bg: #ffffff; --surface: #f9fafb;
+      --text: #111827; --text-soft: #6b7280;
+      --line: rgba(0,0,0,0.1); --white: #FFFFFF;
+    }
+    body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+    .site-nav { background: var(--white); border-bottom: 1px solid var(--line); padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; }
+    .site-nav .logo { font-weight: 900; font-size: 1.5rem; color: var(--primary); }
+    .site-nav .nav-links { display: flex; gap: 1.5rem; }
+    .site-nav .nav-links a { text-decoration: none; color: var(--text); font-weight: 500; }
+    .site-nav .nav-links a:hover { color: var(--primary); }
+    .page-header { background: var(--surface); padding: 3rem 2rem; text-align: center; }
+    .page-header h1 { font-size: 2.5rem; color: var(--primary); margin-bottom: 0.5rem; }
+    .page-header p { color: var(--text-soft); font-size: 1.1rem; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+    .content { max-width: 800px; margin: 2rem auto; }
+    .content h2 { color: var(--primary-d); margin: 2rem 0 1rem; }
+    .content p { margin-bottom: 1.5rem; color: var(--text-soft); }
+    .values { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin: 3rem 0; }
+    .value-card { background: var(--white); padding: 2rem; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.05); }
+    .value-card h3 { color: var(--accent); margin-bottom: 1rem; }
+    .team { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin: 3rem 0; }
+    .team-member { text-align: center; }
+    .team-member img { width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin-bottom: 1rem; }
+    .team-member h3 { color: var(--primary-d); margin-bottom: 0.5rem; }
+    .team-member p { color: var(--text-soft); }
+    footer { background: var(--text); color: var(--white); padding: 2rem; text-align: center; margin-top: 3rem; }
+    .reveal { opacity: 0; transform: translateY(20px); transition: all 0.6s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    @media (max-width: 900px) {
+      .site-nav { flex-direction: column; gap: 1rem; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="site-nav">
+    <div class="logo">otkup__automobila</div>
+    <div class="nav-links">
+      <a href="index.html">Početna</a>
+      <a href="o-nama.html">O nama</a>
+      <a href="usluge.html">Usluge</a>
+      <a href="kontakt.html">Kontakt</a>
+    </div>
+  </nav>
+
+  <header class="page-header reveal">
+    <h1>O nama</h1>
+    <p>Priča o našem poslu otkupa automobila</p>
+  </header>
+
+  <main class="container">
+    <section class="content reveal">
+      <h2>Tko smo mi</h2>
+      <p>otkup__automobila_ je najnoviji akter na tržištu kupoprodaje polovnih vozila u Hrvatskoj. Nastali smo iz potrebe za transparentnijim, bržim i pouzdanijim uslugama kupovanja i prodaje automobila.</p>
+      <p>Naš tim se sastoji od profesionalaca s više od 10 godina iskustva u industriji automobila, sa specijalizacijom u procjeni vozila, trgovini i logistici.</p>
+    </section>
+
+    <section class="values reveal">
+      <div class="value-card reveal">
+        <h3>🔍 Transparentnost</h3>
+        <p>Održavamo maksimalnu jasnoću u svakom koraku procesa kupovine. Bez skrivenih troškova, bez iznenađenja.</p>
+      </div>
+      <div class="value-card reveal">
+        <h3>⚡ Brzina</h3>
+        <p>Otpremamo vozila isti dan. Naša efikasna procedura omogućava brzu procjenu i isplatu novca.</p>
+      </div>
+      <div class="value-card reveal">
+        <h3>💰 Poštena Vrijednost</h3>
+        <p>Obećavamo poštene ponude temeljene na tržištnoj cijeni. Čvrste cijene, bez manipulacije.</p>
+      </div>
+    </section>
+
+    <section class="team reveal">
+      <div class="team-member reveal">
+        <img src="https://placehold.co/150x150?text=Tim+1" alt="Tim član">
+        <h3>Marko Novak</h3>
+        <p>Direktor, 12 godina iskustva</p>
+      </div>
+      <div class="team-member reveal">
+        <img src="https://placehold.co/150x150?text=Tim+2" alt="Tim član">
+        <h3>Petar Jurišić</h3>
+        <p>Mekanik, specijaliziran za pregled vozila</p>
+      </div>
+      <div class="team-member reveal">
+        <img src="https://placehold.co/150x150?text=Tim+3" alt="Tim član">
+        <h3>Luka Perić</h3>
+        <p>Financijski direktor, stručnjak za kupoprodaju</p>
+      </div>
+    </section>
+
+    <section class="content reveal">
+      <h2>Naša Misija</h2>
+      <p>Naša misija je da obezbijedimo jednostavan i profinjen proces za naše klijente koji žele da prodaju svoje automobile brzo, pouzdano i bez napora. Nastavljamo se usredotočiti na zadovoljstvo klijenata kao i na održanje najviših etičkih standarda u poslovanju.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>otkup__automobila_ &copy; 2026 · Otop Automobil</p>
+    <p>Instagram: @otkup__automobila_ · Telefon: +385 XXX XXX XXX</p>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>

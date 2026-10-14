@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Usluge - otkup__automobila_</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --primary: #2563eb; --primary-d: #1e40af;
+      --accent: #10b981; --accent-l: #d1fae5;
+      --bg: #ffffff; --surface: #f9fafb;
+      --text: #111827; --text-soft: #6b7280;
+      --line: rgba(0,0,0,0.1); --white: #FFFFFF;
+    }
+    body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+    .site-nav { background: var(--white); border-bottom: 1px solid var(--line); padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; }
+    .site-nav .logo { font-weight: 900; font-size: 1.5rem; color: var(--primary); }
+    .site-nav .nav-links { display: flex; gap: 1.5rem; }
+    .site-nav .nav-links a { text-decoration: none; color: var(--text); font-weight: 500; }
+    .site-nav .nav-links a:hover { color: var(--primary); }
+    .page-header { background: var(--surface); padding: 3rem 2rem; text-align: center; }
+    .page-header h1 { font-size: 2.5rem; color: var(--primary); margin-bottom: 0.5rem; }
+    .page-header p { color: var(--text-soft); font-size: 1.1rem; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+    .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-top: 2rem; }
+    .service-card { background: var(--white); border-radius: 8px; padding: 2rem; box-shadow: 0 2px 6px rgba(0,0,0,0.05); }
+    .service-card h3 { color: var(--primary-d); margin-bottom: 1rem; }
+    .service-card p { color: var(--text-soft); }
+    .pricing { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 3rem; }
+    .price-card { background: var(--white); padding: 2rem; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.05); }
+    .price-card h3 { color: var(--accent); margin-bottom: 1rem; }
+    .price { font-size: 2rem; font-weight: 900; color: var(--primary-d); margin: 1rem 0; }
+    .features { list-style: none; margin: 1.5rem 0; }
+    .features li { padding-left: 1.5rem; margin-bottom: 0.5rem; position: relative; }
+    .features li::before { content: "✓"; position: absolute; left: 0; color: var(--accent); }
+    footer { background: var(--text); color: var(--white); padding: 2rem; text-align: center; margin-top: 3rem; }
+    .reveal { opacity: 0; transform: translateY(20px); transition: all 0.6s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    @media (max-width: 900px) {
+      .site-nav { flex-direction: column; gap: 1rem; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="site-nav">
+    <div class="logo">otkup__automobila</div>
+    <div class="nav-links">
+      <a href="index.html">Početna</a>
+      <a href="o-nama.html">O nama</a>
+      <a href="usluge.html">Usluge</a>
+      <a href="kontakt.html">Kontakt</a>
+    </div>
+  </nav>
+
+  <header class="page-header reveal">
+    <h1>Usluge</h1>
+    <p>Sve što vam je potrebno za jednostavnu prodaju svog vozila</p>
+  </header>
+
+  <main class="container">
+    <section class="services-grid reveal">
+      <div class="service-card reveal">
+        <h3>🏠 Otop Automobila</h3>
+        <p>Kompleksna usluga kupovne i prodaje svih vrsta vozila - osobnih, kombijev, kamiona i posebnih vozila.</p>
+      </div>
+      <div class="service-card reveal">
+        <h3>📋 Procjena Vrijednosti</h3>
+        <p>Profesionalna procjena vrijednosti potpuno besplatno. Koristimo tržištne podatke za postavljanje poštene ponude.</p>
+      </div>
+      <div class="service-card reveal">
+        <h3>🚗 Registracija i Transfer</h3>
+        <p>Preuzimamo svu administrativu. Registracija, transfer vlasništva i dokumentacija pod našom kontrolom.</p>
+      </div>
+      <div class="service-card reveal">
+        <h3>💸 Isplata U Same Dan</h3>
+        <p>Otvoreni račun za sredstva omogućava gotovinu u roku od 2 sata od dogovora o kupovini.</p>
+      </div>
+      <div class="service-card reveal">
+        <h3>🔧 Nagrada i Popravak</h3>
+        <p>Popravljanje vozila uz minimalne troškove pre transfera vlasništva. Isplata i naknadni popravci posebno ugovoreni.</p>
+      </div>
+      <div class="service-card reveal">
+        <h3>📦 Provera I Rijekao</h3>
+        <p>Ispitivanje stanja vozila, ispravljanje manjih kvarova i ispravljanje greški pred početak prodaje.</p>
+      </div>
+    </section>
+
+    <section class="reveal">
+      <h2 style="text-align: center; color: var(--primary-d); margin: 3rem 0 1rem;">Naše Opcije Otkupa</h2>
+      <div class="pricing reveal">
+        <div class="price-card reveal">
+          <h3>Osnovni Paket</h3>
+          <p>Idealan za svakodnevna vozila koja trebaju osnovnu procjenu vrijednosti.</p>
+          <ul class="features">
+            <li>Procenjivanje vrijednosti vozila</li>
+            <li>Objava oglasa na tržištu</li>
+            <li>Proces prodaje vozača</li>
+            <li>Osnovni dokumenti</li>
+          </ul>
+          <div class="price">Od 500€</div>
+          <p style="color: var(--text-soft);">Uključuje se gotovina za transfer vlasništva u isti dan.</p>
+        </div>
+        <div class="price-card reveal">
+          <h3>Premium Paket</h3>
+          <p>Siguran izbor za vozila s visokom tržištnom vrijednošću za brzu prodaju.</p>
+          <ul class="features">
+            <li>Sve usluge Osnovnog Paketa</li>
+            <li>Profesionalno snimanje vozila</li>
+            <li>Detaljna obrada popravaka</li>
+            <li>Opremljeni HTML web site</li>
+          </ul>
+          <div class="price">Od 1.500€</div>
+          <p style="color: var(--text-soft);">Sve uključeno uz najviši procenat isplate.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>otkup__automobila_ &copy; 2026 · Otop Automobil</p>
+    <p>Instagram: @otkup__automobila_ · Telefon: +385 XXX XXX XXX</p>
+  </footer>
+
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
